@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Мое первое приложение</string>
+    <string name="summa">Введите сумму товара</string>
+    <string name="send">Отправить</string>
+</resources>
