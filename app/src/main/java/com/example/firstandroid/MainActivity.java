@@ -42,11 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 summa=Double.parseDouble(s.toString());
                 procenttips=seekBar.getProgress();
-                tips=summa*procenttips/100;
-                total=summa+tips;
-                textSumma.setText(Double.toString(summa));
-                textTips.setText(Double.toString(tips));
-                textTotal.setText(Double.toString(total));
+                UpdateUI();
             }
 
             @Override
@@ -54,5 +50,31 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                summa=Double.parseDouble(summaEditText.getText().toString());
+                procenttips=progress;
+                UpdateUI();
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+    }
+    private void UpdateUI()
+    {
+        tips=summa*procenttips/100;
+        total=summa+tips;
+        textSumma.setText(Double.toString(summa));
+        textTips.setText(Double.toString(tips));
+        textTotal.setText(Double.toString(total));
     }
 }
