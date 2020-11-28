@@ -16,6 +16,7 @@
         android:background="#ff0000"
         android:id="@+id/summa"
         android:hint="@string/summa"
+        android:inputType="numberDecimal"
         android:textSize="26sp"/>
     <SeekBar
         android:layout_width="match_parent"

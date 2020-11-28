@@ -40,7 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                summa=Double.parseDouble(s.toString());
+                procenttips=seekBar.getProgress();
+                tips=summa*procenttips/100;
+                total=summa+tips;
+                textSumma.setText(Double.toString(summa));
+                textTips.setText(Double.toString(tips));
+                textTotal.setText(Double.toString(total));
             }
 
             @Override
