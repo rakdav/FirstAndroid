@@ -7,4 +7,6 @@
     <string name="totalRes">Итого:</string>
     <string name="yes">Да</string>
     <string name="no">Нет</string>
+    <string name="call">Позвонить</string>
+    <string name="mail">Отправить почтой</string>
 </resources>
