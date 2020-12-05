@@ -2,4 +2,9 @@
     <string name="app_name">Мое первое приложение</string>
     <string name="summa">Введите сумму товара</string>
     <string name="send">Отправить</string>
+    <string name="sumRes">Сумма:</string>
+    <string name="tipRes">Чаевые:</string>
+    <string name="totalRes">Итого:</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 </resources>
